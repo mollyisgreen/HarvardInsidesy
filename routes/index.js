@@ -11,4 +11,9 @@ exports.harvard = function(req, res){
   res.render('harvard.html', { title: 'Express' });
 };
 
+exports.about = function(req, res){
+  res.render('about.html', { title: 'Express' });
+};
+
+
 
