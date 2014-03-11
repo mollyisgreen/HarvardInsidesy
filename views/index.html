@@ -1,0 +1,39 @@
+<% include header.html %>
+
+
+
+<input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <h1>Hello, {{ yourName }}!</h1>
+
+
+<div class="middle">Our First Guide: What's it like to attend Harvard?
+
+
+
+
+
+  	<div class="author">About the Author</br>
+    I’m a 2013 graduate of Harvard College, hailing originally from Phoenix, Arizona. I wrote this guide to provide a consolidated deeper, non-evangelical look at Harvard.
+
+    </div>
+
+  <!-- STRIPE -->
+  <form action="/charge" method="POST">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input name="authenticity_token" type="hidden" value="f755bb0ed134b76c432144748a6d4b7a7ddf2b71" />
+    
+    <script
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="pk_test_QBdYETMCZtbvciG4WBalMS0I"
+      data-amount="999"
+      data-name="Download Guide"
+      data-description="20-page Harvard guide ($9.99)"
+      data-image="/crest.png">
+    </script>
+  </form>
+
+</div>
+
+
+
+<% include footer.html %>

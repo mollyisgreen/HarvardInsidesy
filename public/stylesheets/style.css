@@ -1,0 +1,51 @@
+/********** navbar *********/
+
+.navbar {
+	background: #FFFFFF;
+	-moz-box-shadow:    0px 5px 7px 0px #D4D4D4;
+	-webkit-box-shadow: 0px 5px 7px 0px #D4D4D4;
+	box-shadow:         0px 5px 7px 0px #D4D4D4;
+	padding: 20px 20px 20px 40px;
+	/* Insidesy: */
+	font-family: PoiretOne-Regular;
+	font-size: 36px;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+
+li {
+	display: inline-block;
+	padding-right: 40px;
+}
+
+.pull-right {
+	float: right;
+	text-align: left;
+}
+
+
+
+/********** body *********/
+
+.middle {
+	padding: 100px 100px 100px 100px;
+	text-align: center;
+}
+
+
+
+
+/********** footer *********/
+
+.footer {
+	background: #3A393A;
+	color: #FFFFFF;
+	padding: 50px 50px 50px 50px;
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+}
+
