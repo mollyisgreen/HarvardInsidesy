@@ -34,6 +34,8 @@ li {
 
 .middle {
 	text-align: center;
+	padding: 20px 20px 20px 20px;
+	overflow: hidden;
 }
 
 .guideBox {
@@ -44,10 +46,12 @@ li {
 	-moz-box-shadow:    0px 2px 4px 3px #D4D4D4;
 	-webkit-box-shadow: 0px 2px 4px 3px #D4D4D4;
 	box-shadow:         0px 2px 4px 3px #D4D4D4;
+	float: left;
 }
 
 .author {
 	width: 300px;
+	overflow: hidden;
 }
 
 
