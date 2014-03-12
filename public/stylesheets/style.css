@@ -25,6 +25,7 @@ li {
 #right-nav {
 	float: right;
 	text-align: left;
+	padding-right: 30px;
 }
 
 
@@ -32,8 +33,21 @@ li {
 /********** body *********/
 
 .middle {
-	padding: 100px 100px 100px 100px;
 	text-align: center;
+}
+
+.guideBox {
+	padding: 20px 20px 20px 20px;
+	margin: 20px 20px 20px 20px;
+	width: 300px;
+	height: 400px;
+	-moz-box-shadow:    0px 2px 4px 3px #D4D4D4;
+	-webkit-box-shadow: 0px 2px 4px 3px #D4D4D4;
+	box-shadow:         0px 2px 4px 3px #D4D4D4;
+}
+
+.author {
+	width: 300px;
 }
 
 
