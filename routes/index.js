@@ -15,5 +15,9 @@ exports.about = function(req, res){
   res.render('about.html', { title: 'Express' });
 };
 
+exports.yourguide = function(req, res){
+  res.render('yourguide.html', { title: 'Express' });
+};
+
 
 
