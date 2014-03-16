@@ -42,6 +42,8 @@ li {
 	text-align: center;
 	padding: 20px 20px 20px 20px;
 	overflow: hidden;
+	font-family: PoiretOne-Regular;
+	font-size: 16px;
 }
 
 
@@ -62,6 +64,7 @@ li {
 .author {
 	width: 300px;
 	overflow: hidden;
+	margin: 20px 20px 20px 20px;
 }
 
 
@@ -73,6 +76,7 @@ li {
 	padding: 50px 50px 50px 50px;
 	font-family: 'Poiret One', cursive;
 	text-align: center;
+	overflow: hidden;
 }
 
 #mce-EMAIL {
@@ -80,10 +84,14 @@ li {
 	padding: 10px 10px 10px 10px;
 	font-family: PoiretOne-Regular;
 	font-size: 16px;
+	float: left;
 }
 
 #mc-embedded-subscribe {
 	width: 250px;
+	float: left;
+	overflow: hidden;
+	margin-left: 30px;
 }
 
 
