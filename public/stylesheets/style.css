@@ -28,7 +28,13 @@ li {
 	padding-right: 30px;
 }
 
-
+#suggestionBox {
+	width: 300px;
+	padding: 10px 10px 10px 10px;
+	margin-left: 300px;
+	font-family: PoiretOne-Regular;
+	font-size: 16px;
+}
 
 /********** body *********/
 
@@ -38,8 +44,8 @@ li {
 	overflow: hidden;
 }
 
+
 .guideBox {
-	padding: 20px 20px 20px 20px;
 	margin: 20px 20px 20px 20px;
 	width: 300px;
 	height: 400px;
@@ -47,6 +53,10 @@ li {
 	-webkit-box-shadow: 0px 2px 4px 3px #D4D4D4;
 	box-shadow:         0px 2px 4px 3px #D4D4D4;
 	float: left;
+}
+
+#harvardPic {
+	width: 300px;
 }
 
 .author {
@@ -64,4 +74,16 @@ li {
 	font-family: 'Poiret One', cursive;
 	text-align: center;
 }
+
+#mce-EMAIL {
+	width: 250px;
+	padding: 10px 10px 10px 10px;
+	font-family: PoiretOne-Regular;
+	font-size: 16px;
+}
+
+#mc-embedded-subscribe {
+	width: 250px;
+}
+
 
