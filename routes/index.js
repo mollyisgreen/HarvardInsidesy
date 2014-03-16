@@ -19,5 +19,9 @@ exports.yourguide = function(req, res){
   res.render('yourguide.html', { title: 'Express' });
 };
 
+exports.purchased = function(req, res){
+  res.render('purchased.html', { title: 'Express' });
+};
+
 
 
