@@ -3,9 +3,6 @@
  * GET home page.
  */
 
-var mongoose = require('mongoose');
-var Suggestion = mongoose.model('Suggestion');
-
 
 exports.index = function(req, res){
   res.render('index.html', { title: 'Express' });
@@ -28,10 +25,24 @@ exports.purchased = function(req, res){
 };
 
 exports.submitSuggestion = function(req, res){
+	console.log("whatup1");
+
+	db.suggestions.insert( 
+		{ content    : req.body.content,
+	    updated_at : Date.now()
+	}).save( function( err, todo, count ){
+	    res.redirect( '/' );
+	    
+	console.log("whatup2");
+/*
     new Suggestion({
 	    content    : req.body.content,
 	    updated_at : Date.now()
 	  }).save( function( err, todo, count ){
+
+	  	console.log("whatup2");
+
 	    res.redirect( '/' );
 	  });
-};
+*/
+})};
