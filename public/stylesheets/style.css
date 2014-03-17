@@ -9,6 +9,7 @@
 	/* Insidesy: */
 	font-family: 'Open Sans', sans-serif;
 	font-size: 36px;
+	overflow: hidden;
 }
 
 a:hover, a:visited, a:link, a:active
@@ -16,18 +17,9 @@ a:hover, a:visited, a:link, a:active
     text-decoration: none;
 }
 
-
-li {
-	display: inline-block;
-	padding-right: 40px;
-}
-
-.right-nav {
-	float: right;
-	padding-right: 30px;
-	padding-left: 60px;
-	font-size: 24px;
-
+#logo {
+	float: left;
+	width: 100px;
 }
 
 .suggestionBox {
@@ -36,6 +28,15 @@ li {
 	margin-left: 200px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
+	float: left;
+}
+
+.right-nav {
+	float: right;
+	padding-right: 30px;
+	padding-left: 60px;
+	font-size: 24px;
+
 }
 
 /********** body *********/
