@@ -3,8 +3,8 @@
  * GET home page.
  */
 
-var mongoose = require( 'mongoose' );
-var Suggestion = mongoose.model( 'Suggestion' );
+var mongoose = require('mongoose');
+var Suggestion = mongoose.model('Suggestion');
 
 
 exports.index = function(req, res){
@@ -35,4 +35,3 @@ exports.submitSuggestion = function(req, res){
 	    res.redirect( '/' );
 	  });
 };
-
