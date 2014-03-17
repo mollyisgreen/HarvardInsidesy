@@ -25,8 +25,8 @@ exports.purchased = function(req, res){
 };
 
 exports.submitSuggestion = function(req, res){
-	console.log("whatup1");
-
+	console.log(req.db);
+/*
 	db.suggestions.insert( 
 		{ content    : req.body.content,
 	    updated_at : Date.now()
@@ -34,7 +34,8 @@ exports.submitSuggestion = function(req, res){
 	    res.redirect( '/' );
 	    
 	console.log("whatup2");
-/*
+
+
     new Suggestion({
 	    content    : req.body.content,
 	    updated_at : Date.now()
@@ -44,5 +45,7 @@ exports.submitSuggestion = function(req, res){
 
 	    res.redirect( '/' );
 	  });
+
+})
 */
-})};
+};
