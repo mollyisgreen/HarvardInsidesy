@@ -30,7 +30,7 @@ li {
 
 }
 
-#suggestionBox {
+.suggestionBox {
 	width: 300px;
 	padding: 10px 10px 10px 10px;
 	margin-left: 200px;

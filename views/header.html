@@ -11,9 +11,9 @@
 		<!-- AngularJS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 		
+		<!-- jQuery -->		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="javascripts/vendor/jquery.ui.widget.js"></script>
-		<script src="javascripts/jquery.iframe-transport.js"></script>
+
 
 		<!-- Google Analytics-->
 		<script>
@@ -33,9 +33,27 @@
 
 	<header class="navbar">
     	<div class="container">
+
       		<a href="/" id="logo">Insidesy</a>
-      		  <input id="suggestionBox" type="text" ng-model="suggestion" placeholder="Search guide topics">
+
+      		<form><input class="suggestionBox" type="text" placeholder="Search guide topics"></form>
+
       		<a href="/yourguide" class="right-nav">Write and sell your own guide</a>
+
       		<a href="/about" class="right-nav">About</a>
+
     	</div>
+
+
+		<script>
+			$(document).ready(function() {
+			    $('.suggestionBox').keyup(function(event) {
+			        if (event.keyCode == 13) {
+			            this.form.submit();
+			            return false;
+			         }
+			    });
+			});
+		</script>
+
 	</header>
