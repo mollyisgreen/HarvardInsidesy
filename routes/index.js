@@ -23,29 +23,3 @@ exports.yourguide = function(req, res){
 exports.purchased = function(req, res){
   res.render('purchased.html', { title: 'Express' });
 };
-
-exports.submitSuggestion = function(req, res){
-	console.log(req.db);
-/*
-	db.suggestions.insert( 
-		{ content    : req.body.content,
-	    updated_at : Date.now()
-	}).save( function( err, todo, count ){
-	    res.redirect( '/' );
-	    
-	console.log("whatup2");
-
-
-    new Suggestion({
-	    content    : req.body.content,
-	    updated_at : Date.now()
-	  }).save( function( err, todo, count ){
-
-	  	console.log("whatup2");
-
-	    res.redirect( '/' );
-	  });
-
-})
-*/
-};
