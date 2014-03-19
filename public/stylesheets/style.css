@@ -76,6 +76,7 @@ a:hover, a:visited, a:link, a:active
 .guideTitle {
 	color: #4A4A4A;
 	font-size: 25px;
+	line-height: 20px;
 }
 
 #harvardPic {
