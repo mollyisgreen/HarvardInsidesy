@@ -50,6 +50,7 @@ a:hover, a:visited, a:link, a:active
 
 /********** body *********/
 
+
 .middle {
 	text-align: center;
 	padding: 20px 20px 20px 20px;
@@ -72,8 +73,23 @@ a:hover, a:visited, a:link, a:active
 	margin: 20px 50px 20px 50px;
 }
 
+.guideTitle {
+	color: #4A4A4A;
+	font-size: 25px;
+}
+
 #harvardPic {
 	width: 300px;
+	margin-top: -10px;
+}
+
+.guidePages {
+	color: #4A4A4A;
+	line-height: 10px;
+}
+
+.clickToPreview {
+	line-height: 10px;
 }
 
 .author {
