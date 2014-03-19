@@ -19,13 +19,13 @@ a:hover, a:visited, a:link, a:active
 
 #logo {
 	float: left;
-	width: 100px;
+	width: 200px;
 }
 
 .suggestionBox {
 	width: 300px;
 	padding: 10px 10px 10px 10px;
-	margin-left: 200px;
+	margin: 20px 20px 20px 150px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	float: left;
@@ -33,8 +33,7 @@ a:hover, a:visited, a:link, a:active
 
 .right-nav {
 	float: right;
-	padding-right: 30px;
-	padding-left: 60px;
+	margin: 20px 20px 20px 70px;
 	font-size: 24px;
 
 }
