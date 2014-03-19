@@ -76,22 +76,25 @@ a:hover, a:visited, a:link, a:active
 .guideTitle {
 	color: #4A4A4A;
 	font-size: 25px;
-	line-height: 20px;
+	line-height: 30px;
 }
 
 #harvardPic {
 	width: 300px;
-	margin-top: -10px;
-}
-
-.guidePages {
-	color: #4A4A4A;
-	line-height: 10px;
 }
 
 .clickToPreview {
-	line-height: 10px;
+	line-height: 30px;
 }
+
+.circleAuthor {
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
+
 
 .author {
 	width: 300px;
