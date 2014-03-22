@@ -63,9 +63,12 @@ a:hover, a:visited, a:link, a:active
 	font-size: 16px;
 	margin-left:auto;
 	margin-right:auto;
-	width:50%;
 }
 
+.middleInner {
+	margin:0 auto;
+	width: 960px;
+}
 
 .guideBox {
 	width: 300px;
@@ -104,7 +107,6 @@ a:hover, a:visited, a:link, a:active
 	overflow: hidden;
 	margin: 20px 20px 20px 20px;
 	color: #4A4A4A;
-	color: #4A4A4A;
 	font-size: 14px;
 	line-height: 20px;
 }
@@ -121,11 +123,14 @@ a:hover, a:visited, a:link, a:active
 	overflow: hidden;
 }
 
+.footerInner {
+	margin:0 auto;
+	width: 960px;
+}
+
 #mc_embed_signup {
-	margin-left:auto;
-	margin-right:auto;
 	margin-top: 20px;
-	width:55%;
+	margin:0 auto;
 }
 
 /* email box */
