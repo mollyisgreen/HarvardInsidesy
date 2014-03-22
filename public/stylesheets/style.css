@@ -68,6 +68,7 @@ a:hover, a:visited, a:link, a:active
 .middleInner {
 	margin:0 auto;
 	width: 960px;
+	padding: 20px 20px 20px 20px;
 }
 
 .guideBox {
@@ -94,6 +95,17 @@ a:hover, a:visited, a:link, a:active
 	line-height: 30px;
 }
 
+.author {
+	width: 300px;
+	height: 400px;
+	overflow: hidden;
+	color: #4A4A4A;
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 50px;
+}
+
+
 .circleAuthor {
 	width: 150px;
 	height: 150px;
@@ -101,16 +113,6 @@ a:hover, a:visited, a:link, a:active
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
 }
-
-.author {
-	width: 300px;
-	overflow: hidden;
-	margin: 20px 20px 20px 20px;
-	color: #4A4A4A;
-	font-size: 14px;
-	line-height: 20px;
-}
-
 
 /********** footer *********/
 

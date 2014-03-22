@@ -13,30 +13,31 @@
 
 
   <div class="author">
-      <b>About the Author</b></br></br>
       <img class="circleAuthor" src="/molly.jpg" alt="molly"></br>
-      Molly is a 2013 graduate of Harvard College. She wrote this guide to provide a consolidated, deeper, and non-evangelical look at Harvard to help you make your decision about whether Harvard's the school for you.</br>
+      The author of this guide, Molly, is a 2013 graduate of Harvard College. She wrote this guide to provide a consolidated, deeper, and non-evangelical look at Harvard to help you make your decision about whether Harvard's the school for you.</br></br>
       Download a copy for $8.
-  </div>
 
-  <!-- STRIPE -->
-    <form action="/charge" method="POST">
+      <!-- STRIPE -->
+      <form action="/charge" method="POST">
       <input name="utf8" type="hidden" value="&#x2713;" />
       <input name="authenticity_token" type="hidden" value="f755bb0ed134b76c432144748a6d4b7a7ddf2b71" />
         
       <script
         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="pk_test_QBdYETMCZtbvciG4WBalMS0I"
-        data-amount="999"
+        data-amount="800"
         data-name="Download Guide"
-        data-description="20-page Harvard guide ($9.99)"
+        data-description="20-page Harvard guide ($8)"
         data-image="/crest.jpg">
       </script>
     </form>
 
+
+  </div>
+
+
+
   </div>
 </div>
-
-
 
 <% include footer.html %>
