@@ -38,7 +38,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 .suggestionBox {
-	width: 300px;
+	width: 320px;
 	padding: 10px 10px 10px 10px;
 	margin: 5px 20px 0px 40px;
 	font-family: 'Open Sans', sans-serif;
@@ -48,7 +48,7 @@ a:hover, a:visited, a:link, a:active
 
 .right-nav {
 	float: right;
-	margin: 20px 20px 0px 20px;
+	margin: 20px 20px 0px 10px;
 	font-size: 24px;
 }
 
@@ -66,8 +66,8 @@ a:hover, a:visited, a:link, a:active
 }
 
 .middleInner {
-	margin:0 auto;
-	width: 960px;
+	margin: 0 auto;
+	width: 700px;
 	padding: 20px 20px 20px 20px;
 }
 
@@ -102,7 +102,7 @@ a:hover, a:visited, a:link, a:active
 	color: #4A4A4A;
 	font-size: 14px;
 	line-height: 20px;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 
@@ -127,12 +127,11 @@ a:hover, a:visited, a:link, a:active
 
 .footerInner {
 	margin:0 auto;
-	width: 960px;
+	width: 680px;
 }
 
 #mc_embed_signup {
 	margin-top: 20px;
-	margin:0 auto;
 }
 
 /* email box */
