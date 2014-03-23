@@ -91,7 +91,7 @@ a:hover, a:visited, a:link, a:active
 
 .guideTitle {
 	color: #4A4A4A;
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 30px;
 }
 
@@ -101,6 +101,8 @@ a:hover, a:visited, a:link, a:active
 
 .clickToPreview {
 	line-height: 30px;
+	color: #4A4A4A;
+	font-size: 20px;
 }
 
 .author {
@@ -148,12 +150,12 @@ a:hover, a:visited, a:link, a:active
 
 /* email box */
 #mce-EMAIL {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
-	line-height: 20px;
+		font-family: PoiretOne-Regular;
+		font-size: 20px;
+		text-align: center;
 
 	width: 250px;
-	padding: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
 	/*font-family: 'Open Sans', sans-serif;
 	font-size: 16px;*/
 	float: left;
@@ -161,23 +163,26 @@ a:hover, a:visited, a:link, a:active
 
 /* signup button */
 #mc-embedded-subscribe {
+		font-family: PoiretOne-Regular;
 		background: #6792C4;
+		font-size: 20px;
+		text-align: center;
 	width: 350px;
 	float: left;
 	overflow: hidden;
 	margin-left: 30px;
-	padding: 10px 10px 10px 10px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	padding: 6px 6px 6px 6px;
 	border:solid;
 	border-width:1px;
-	/*background: #3A393A;*/
+	/*background: #3A393A;
+	font-family: 'Open Sans', sans-serif;*/
 	border-color: #FFFFFF;
 	color: #FFFFFF;
 }
 
 
-/********** individual package *********/
+/********** individual Harvard guide page *********/
+
 .middleHarvard {
 	text-align: center;
 	padding: 20px 20px 20px 20px;
