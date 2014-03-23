@@ -9,16 +9,20 @@ h1, h2 {
 .navbar {
 	background: #6792C4;
 	color: #FFFFFF;
+	font-family: PoiretOne-Regular;
+	font-size: 20px;
+	line-height: 20px;
+
 	/*
 	background: #FFFFFF;
 	-moz-box-shadow:    0px 5px 7px 0px #D4D4D4;
 	-webkit-box-shadow: 0px 5px 7px 0px #D4D4D4;
 	box-shadow:         0px 5px 7px 0px #D4D4D4;
-	*/
-	padding: 20px 20px 20px 40px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 36px;
+	*/
 	overflow: hidden;
+	padding: 20px 20px 20px 40px;
 }
 
 .navbarInner {
@@ -106,7 +110,7 @@ a:hover, a:visited, a:link, a:active
 	color: #4A4A4A;
 	font-size: 14px;
 	line-height: 20px;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 
@@ -121,11 +125,14 @@ a:hover, a:visited, a:link, a:active
 /********** footer *********/
 
 .footer {
+	font-family: PoiretOne-Regular;
+	font-size: 20px;
+	line-height: 20px;
 	background: #6792C4;
-	/*background: #3A393A;*/
+	/*background: #3A393A;
+	font-family: 'Open Sans', sans-serif;*/
 	color: #FFFFFF;
 	padding: 50px 50px 50px 50px;
-	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	overflow: hidden;
 }
@@ -141,10 +148,14 @@ a:hover, a:visited, a:link, a:active
 
 /* email box */
 #mce-EMAIL {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	line-height: 20px;
+
 	width: 250px;
 	padding: 10px 10px 10px 10px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	/*font-family: 'Open Sans', sans-serif;
+	font-size: 16px;*/
 	float: left;
 }
 
