@@ -3,6 +3,10 @@ h1, h2 {
 	color: #4A4A4A;
 }
 
+body {
+	margin: 0px 0px 0px 0px;
+}
+
 
 /********** navbar *********/
 
@@ -46,11 +50,14 @@ a:hover, a:visited, a:link, a:active
 }
 
 .suggestionBox {
+		font-family: PoiretOne-Regular;
+		font-size: 20px;
+		line-height: 20px;
 	width: 320px;
 	padding: 10px 10px 10px 10px;
 	margin: 5px 20px 0px 40px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	/*font-family: 'Open Sans', sans-serif;
+	font-size: 16px;*/
 	float: left;
 }
 
@@ -152,10 +159,9 @@ a:hover, a:visited, a:link, a:active
 #mce-EMAIL {
 		font-family: PoiretOne-Regular;
 		font-size: 20px;
-		text-align: center;
 
 	width: 250px;
-	padding: 5px 5px 5px 5px;
+	padding: 10px 10px 10px 10px;
 	/*font-family: 'Open Sans', sans-serif;
 	font-size: 16px;*/
 	float: left;
@@ -171,7 +177,7 @@ a:hover, a:visited, a:link, a:active
 	float: left;
 	overflow: hidden;
 	margin-left: 30px;
-	padding: 6px 6px 6px 6px;
+	padding: 10px 10px 10px 10px;
 	border:solid;
 	border-width:1px;
 	/*background: #3A393A;
