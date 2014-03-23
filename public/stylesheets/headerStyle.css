@@ -1,19 +1,20 @@
 /********** navbar *********/
 
 .navbar {
+
+/*background: #D4D4D4;*/
+
 	background: #6792C4;
+	-moz-box-shadow:    0px 5px 7px 0px #D4D4D4;
+	-webkit-box-shadow: 0px 5px 7px 0px #D4D4D4;
+	box-shadow:         0px 5px 7px 0px #D4D4D4;
+
 	color: #FFFFFF;
 	font-family: PoiretOne-Regular;
 	font-size: 20px;
 	line-height: 20px;
-	-moz-box-shadow:    0px 5px 7px 0px #D4D4D4;
-	-webkit-box-shadow: 0px 5px 7px 0px #D4D4D4;
-	box-shadow:         0px 5px 7px 0px #D4D4D4;
 	/*
 	background: #FFFFFF;
-	-moz-box-shadow:    0px 5px 7px 0px #D4D4D4;
-	-webkit-box-shadow: 0px 5px 7px 0px #D4D4D4;
-	box-shadow:         0px 5px 7px 0px #D4D4D4;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 36px;
 	*/
