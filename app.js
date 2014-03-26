@@ -17,6 +17,7 @@ var fs = require('fs');
 var app = express();
 var stripe = require("stripe")(config.stripePublicKey);
 
+app.use(express.cookieParser('secret'));
 
 // redirect to https
 function redirectSec(req, res, next) {
@@ -60,10 +61,9 @@ app.get('/', redirectSec, routes.index);
 app.get('/harvard', routes.harvard);
 app.get('/about', routes.about);
 app.get('/yourguide', routes.yourguide);
-app.get('/purchased', routes.purchased);
 app.post('/submitSuggestion', db.submitSuggestion);
 app.post('/saveEmail', db.saveEmail);
-
+app.get('/purchased', routes.purchased);
 
 // delete  line below later b/c useless --- just for reference
 app.get('/users', user.list);
@@ -89,6 +89,9 @@ app.post('/charge', function(req, res){
 	    // The card has been declined
 	  }
 	});
+
+	var twentyMin = 60 * 1000;
+  	res.cookie('remember', 1, { maxAge: twentyMin });
 
 	res.redirect("/purchased");
 });

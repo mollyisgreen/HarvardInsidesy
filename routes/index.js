@@ -21,5 +21,9 @@ exports.yourguide = function(req, res){
 };
 
 exports.purchased = function(req, res){
+	if (req.cookies.remember) {
   res.render('purchased.html', { title: 'Express' });
+  } else {
+	res.redirect("/");
+  }
 };
