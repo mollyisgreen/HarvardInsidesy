@@ -5,7 +5,9 @@
 
 
 db = require('./db');
-config = require('./sensitive.config');
+// config = require('./sensitive.config');
+var dotenv = require('dotenv');
+dotenv.load();
 
 var express = require('express');
 var routes = require('./routes');
@@ -15,7 +17,8 @@ var https = require('http');
 var path = require('path');
 var fs = require('fs');
 var app = express();
-var stripe = require("stripe")(config.stripePublicKey);
+// var stripe = require("stripe")(config.stripePublicKey);
+var stripe = require("stripe")(process.env.stripePublicKey);
 
 app.use(express.cookieParser('secret'));
 
@@ -73,7 +76,8 @@ app.get('/users', user.list);
 app.post('/charge', function(req, res){
 	// Set your secret key: remember to change this to your live secret key in production
 	// See your keys here https://manage.stripe.com/account
-	stripe.setApiKey(config.stripeSecretKey);
+	//stripe.setApiKey(config.stripeSecretKey);
+	stripe.setApiKey(process.env.stripeSecretKey);
 
 	// (Assuming you're using express - expressjs.com)
 	// Get the credit card details submitted by the form

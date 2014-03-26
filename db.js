@@ -1,7 +1,10 @@
-config = require('./sensitive.config');
+// config = require('./sensitive.config');
+var dotenv = require('dotenv');
+dotenv.load();
 
 var mongoose = require('mongoose');
-var uristring = config.mongoUriString;
+//var uristring = config.mongoUriString;
+var uristring = process.env.mongoUriString;
 
 
 mongoose.connect(uristring, function (err, db) {
