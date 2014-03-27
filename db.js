@@ -31,6 +31,7 @@ exports.submitSuggestion = function(req, res){
         updated_at : Date.now()   
     });
 
+
     suggestion.save(function (err) {
         if (!err) {
             return res.send(suggestion);
@@ -42,6 +43,7 @@ exports.submitSuggestion = function(req, res){
 
 
     return res.send(suggestion);
+    
 }
 
 
