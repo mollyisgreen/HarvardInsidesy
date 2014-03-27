@@ -10,24 +10,20 @@
 		<link rel="stylesheet" type="text/css" href="/stylesheets/headerStyle.css">
 		<link rel="stylesheet" type="text/css" href="/stylesheets/footerStyle.css">
 
+		<!-- Open Sans Font -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		
+		<!-- Open Poiret One -->
+		<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		
+		<!-- jQuery -->		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 		<!-- Twitter Bootstrap -->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-
-		<!-- Open Sans Font -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-		
-		<!-- Open Poiret One -->
-		<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-
-		<!-- AngularJS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-		
-		<!-- jQuery -->		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 		<!-- Google Analytics-->
 		<script>
@@ -65,7 +61,7 @@
 
       		<a href="/"><img src="/logo.png" id="logo" alt="logo"></a>
 
-      		<form id="suggestionForm" accept-charset="utf-8">
+      		<form action="/submitSuggestion" method="post" id="suggestionForm" accept-charset="utf-8">
       			<input class="suggestionBox" name="suggest" type="text" placeholder="Search guide topics">
       		</form>
 
@@ -87,21 +83,12 @@
 					url: "/submitSuggestion",
 					success: successSuggestResponse,
 			    });
+				return false;
 			});
 
 			function successSuggestResponse(){
 				document.getElementById('emailSuccess').style.display = "block";
 			}
-		});
-
-
-		$(document).ready(function() {
-			$('.suggestionBox').keyup(function(event) {
-			    if (event.keyCode == 13) {
-			        this.form.submit();
-			        return false;
-			    }
-			});
 		});
 		</script>
 
