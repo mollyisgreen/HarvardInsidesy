@@ -37,8 +37,6 @@
 		<script type="text/javascript">var switchTo5x=true;</script>
 		<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 		<script type="text/javascript">stLight.options({publisher: "4649d9aa-68f5-4e65-a6fe-6a65f006b915", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
-
-
 	</head>
 
 	<body>
@@ -55,14 +53,40 @@
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 
+
 	<header class="navbar">
     	<div class="navbarInner">
 
       		<a href="/"><img src="/logo.png" id="logo" alt="logo"></a>
 
-      		<form action="/submitSuggestion" method="post" accept-charset="utf-8">
+      		<form id="suggestionForm" accept-charset="utf-8">
       			<input class="suggestionBox" name="suggest" type="text" placeholder="Search guide topics">
       		</form>
+
+      		<!-- AJAX submit suggestion-->
+      		<script>
+
+      		$(document).ready(function(){   
+
+			    // handle button clicks         
+			    $('#suggestionForm').submit(function() {
+
+			        // make an ajax call
+			        $.ajax({
+						dataType: 'json',
+						data: $('#suggestionForm').serialize(),
+						type: 'POST',
+						url: "/submitSuggestion",
+						success: handleButtonResponse,
+			        });
+			    });
+
+			    function handleButtonResponse(){
+			        document.getElementById('suggestSuccess').style.display = "block";
+			    }
+
+			});
+			</script>
 
       		<a href="/yourguide" class="right-nav">Write and sell your own guide</a>
 

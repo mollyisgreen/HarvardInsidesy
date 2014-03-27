@@ -26,24 +26,22 @@ var Suggestion = mongoose.model( 'Suggestion', suggestionSchema );
 
 // create a suggestion
 exports.submitSuggestion = function(req, res){
+        console.log("whatupbitch");
     var suggestion = new Suggestion({
         content    : req.body.suggest,
         updated_at : Date.now()   
     });
 
-
     suggestion.save(function (err) {
         if (!err) {
-            return res.send(suggestion);
+            return res.send(suggestion);        
         } else {
             console.log(err);
             return res.send(404, { error: "Suggestion was not saved." });
         }
     });
 
-
     return res.send(suggestion);
-    
 }
 
 
