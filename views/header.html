@@ -63,47 +63,40 @@
       			<input class="suggestionBox" name="suggest" type="text" placeholder="Search guide topics">
       		</form>
 
-      		<!-- AJAX submit suggestion-->
-      		<script>
-
-      		$(document).ready(function(){   
-
-			    // handle button clicks         
-			    $('#suggestionForm').submit(function() {
-
-			        // make an ajax call
-			        $.ajax({
-						dataType: 'json',
-						data: $('#suggestionForm').serialize(),
-						type: 'POST',
-						url: "/submitSuggestion",
-						success: handleButtonResponse,
-			        });
-			    });
-
-			    function handleButtonResponse(){
-			        document.getElementById('suggestSuccess').style.display = "block";
-			    }
-
-			});
-			</script>
-
       		<a href="/yourguide" class="right-nav">Write and sell your own guide</a>
 
       		<a href="/about" class="right-nav">About</a>
 
     	</div>
 
-
+		<!-- AJAX submit suggestion-->
 		<script>
-			$(document).ready(function() {
-			    $('.suggestionBox').keyup(function(event) {
-			        if (event.keyCode == 13) {
-			            this.form.submit();
-			            return false;
-			         }
+		$(document).ready(function(){   
+      
+			$('#suggestionForm').submit(function() {
+			    $.ajax({
+					dataType: 'json',
+					data: $('#suggestionForm').serialize(),
+					type: 'POST',
+					url: "/submitSuggestion",
+					success: successSuggestResponse,
 			    });
 			});
+
+			function successSuggestResponse(){
+			    document.getElementById('suggestSuccess').style.display = "block";
+			}
+
+		});
+
+		$(document).ready(function() {
+			$('.suggestionBox').keyup(function(event) {
+			    if (event.keyCode == 13) {
+			        this.form.submit();
+			        return false;
+			    }
+			});
+		});
 		</script>
 
 	</header>
