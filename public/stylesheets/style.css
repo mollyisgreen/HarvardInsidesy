@@ -89,9 +89,33 @@ body {
 
 /********** about pages *********/
 
+.redBlock {
+	background: #C74B5A;
+	padding: 20px 20px 20px 20px;
+	margin: 0 auto;
+	width: 800px;
+	color: #FFFFFF;
+		overflow: hidden;
+		margin-bottom: 20px;
+}
 
+.leftRedText {
+	font-size: 20px;
+	float: left;
+	vertical-align: center;
+}
 
+.rightRedText {
+	font-size: 20px;
+	line-height: 40px;
+	float: right;
+}
 
+.redBracket {
+	font-size: 150px;
+	float: left;
+	margin-left: 20px;
+}
 
 
 
