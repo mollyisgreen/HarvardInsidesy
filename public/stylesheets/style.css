@@ -87,7 +87,7 @@ body {
 
 .redBlock {
 	background: #C74B5A;
-	padding: 20px 20px 20px 20px;
+	padding: 20px 20px 10px 20px;
 	margin: 0 auto;
 	width: 800px;
 	color: #FFFFFF;
@@ -98,8 +98,7 @@ body {
 .leftRedText {
 	font-size: 20px;
 	float: left;
-	vertical-align: center;
-
+	margin: 70px 10px 30px 10px;
 }
 
 .rightRedText {
@@ -111,7 +110,8 @@ body {
 .redBracket {
 	font-size: 150px;
 	float: left;
-	margin-left: 20px;
+	margin-left: 40px;
+	margin-top: -40px;
 }
 
 .aboutText {
