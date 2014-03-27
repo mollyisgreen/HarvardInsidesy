@@ -23,7 +23,7 @@
 
 	    <!-- My email form -->
 	    <div id="mc_embed_signup">
-		    <form action="/saveEmail" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+		    <form id="emailForm" action="/saveEmail" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
 		      
 		    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="leave your email" required>
 		    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -33,6 +33,29 @@
 	    	</form>
 	    </div>
 	    <!--my email form-->
+
+
+		<!-- AJAX submit suggestion-->
+		<script>
+		$(document).ready(function(){   
+      
+			$('#emailForm').submit(function() {
+			    $.ajax({
+					dataType: 'json',
+					data: $('#emailForm').serialize(),
+					type: 'POST',
+					url: "/saveEmail",
+					success: successEmailResponse,
+			    });
+				return false;
+			});
+
+			function successEmailResponse(){
+				document.getElementById('emailSuccess').style.display = "block";
+			}
+		});
+		</script>
+
   		</div>
 	</div>
 

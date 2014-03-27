@@ -68,7 +68,6 @@ exports.saveEmail = function(req, res){
         }
     });
 
-
     return res.send(email);
 }
 
