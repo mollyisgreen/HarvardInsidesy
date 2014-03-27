@@ -104,7 +104,7 @@ body {
 .rightRedText {
 	font-size: 20px;
 	line-height: 40px;
-	float: right;
+	float: left;
 	text-align: left;
 }
 
