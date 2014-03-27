@@ -26,7 +26,7 @@ var Suggestion = mongoose.model( 'Suggestion', suggestionSchema );
 
 // create a suggestion
 exports.submitSuggestion = function(req, res){
-        console.log("whatupbitch");
+
     var suggestion = new Suggestion({
         content    : req.body.suggest,
         updated_at : Date.now()   
