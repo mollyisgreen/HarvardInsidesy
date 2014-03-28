@@ -61,9 +61,9 @@
       			<input class="suggestionBox" name="suggest" type="text" placeholder="Search guide topics">
       		</form>
 
-      		<a href="/yourguide" class="right-nav">Write and sell your own guide</a>
+      		<a href="/yourguide" id="right-nav">Write and sell your own guide</a>
 
-      		<a href="/about" class="right-nav">About</a>
+      		<a href="/about" id="right-nav">About</a>
 
     	</div>
 
@@ -84,6 +84,7 @@
 
 			function successSuggestResponse(){
 				document.getElementById('suggestSuccess').style.display = "block";
+				document.getElementById("suggestionForm").reset();
 			}
 		});
 		</script>
