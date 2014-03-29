@@ -84,7 +84,7 @@ app.post('/charge', function(req, res){
 	var stripeToken = req.body.stripeToken;
 	
 	var charge = stripe.charges.create({
-	  amount: 800, // amount in cents, again
+	  amount: 500, // amount in cents, again
 	  currency: "usd",
 	  card: stripeToken,
 	  description: "payinguser@example.com"
