@@ -7,15 +7,12 @@ body {
 	margin: 0px 0px 0px 0px;
 }
 
-
 @font-face {
-    font-family: OpenSans;
-    src: url('OpenSans--Regular.ttf');
-}
-
-@font-face {
-    font-family: PoiretOne;
-    src: url('PoiretOne-Regular.ttf');
+	font-family: PoiretOne-Regular;
+	src: url('/poiretone-regular-webfont.ttf'),
+	url('/poiretone-regular-webfont.eot'),
+	url('/poiretone-regular-webfont.svg'),
+	url('/poiretone-regular-webfont.woff');
 }
 
 /********** body *********/
@@ -137,9 +134,5 @@ body {
 #disqus_thread {
 	color: #6F6D6D;	
 }
-
-
-
-
 
 
