@@ -2,13 +2,13 @@
 
 .navbar {
 	background: #6792C4;
-	-moz-box-shadow:    0px 5px 7px 0px #D4D4D4;
-	-webkit-box-shadow: 0px 5px 7px 0px #D4D4D4;
-	box-shadow:         0px 5px 7px 0px #D4D4D4;
+	-moz-box-shadow:    0px 1px 3px 0px #D4D4D4;
+	-webkit-box-shadow: 0px 1px 3px 0px #D4D4D4;
+	box-shadow:         0px 1px 3px 0px #D4D4D4;
 	color: #FFFFFF;
-	font-family: PoiretOne-Regular;
-	font-size: 20px;
-	line-height: 20px;
+	font-family: OpenSans;
+	font-size: 18px;
+	line-height: 18px;
 	overflow: hidden;
 	padding: 10px 20px 15px 40px;
 }
@@ -22,8 +22,8 @@ a:hover, a:visited, a:link, a:active
 {
 	color: #FFFFFF;
     text-decoration: none;
-	font-size: 20px;
-	line-height: 20px;
+	font-size: 18px;
+	line-height: 18px;
 }
 
 ul
@@ -37,21 +37,21 @@ ul
 }
 
 .suggestionBox {
-	font-family: PoiretOne-Regular;
-	font-size: 20px;
-	line-height: 20px;
-	width: 350px;
+	font-family: OpenSans;
+	font-size: 18px;
+	line-height: 18px;
+	width: 330px;
 	padding: 10px 10px 10px 10px;
-	margin: 10px 20px 0px 40px;
+	margin: 10px 20px 0px 50px;
 	float: left;
 	color: #858385;
 }
 
 #right-nav {
-	float: right;
+	float: left;
 	margin: 20px 20px 0px 10px;
 	color: #FFFFFF;
     text-decoration: none;
-	font-size: 20px;
-	line-height: 20px;
+	font-size: 18px;
+	line-height: 18px;
 }

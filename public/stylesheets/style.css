@@ -20,7 +20,7 @@ body {
 
 .middle {
 	text-align: center;
-	padding: 20px 20px 20px 20px;
+	padding: 0px 20px 20px 20px;
 	overflow: hidden;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
@@ -37,20 +37,24 @@ body {
 .guideBox {
 	color: #858385;
 	border: none;
-	width: 300px;
-	height: 422px;
+	width: 400px;
+	height: 300;
 	padding: 20px 20px 20px 20px;
 	-moz-box-shadow:    0px 2px 4px 3px #D4D4D4;
 	-webkit-box-shadow: 0px 2px 4px 3px #D4D4D4;
 	box-shadow:         0px 2px 4px 3px #D4D4D4;
 	float: left;
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0 auto;
+	float: center;
 }
 
 .guideTitle {
 	color: #858385;
 	/*color: #4A4A4A;*/
-	font-size: 20px;
-	line-height: 30px;
+	font-size: 18px;
+	line-height: 18px;
 }
 
 .description {
@@ -62,7 +66,7 @@ body {
 .clickToPreview {		
 	color: #858385;
 	line-height: 20px;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .author {
@@ -72,7 +76,7 @@ body {
 	color: #858385;
 	width: 300px;
 	overflow: hidden;
-	font-size: 12px;
+	font-size: 18px;
 	line-height: 20px;
 	padding: 20px 20px 20px 20px;
 }
