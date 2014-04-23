@@ -14,9 +14,9 @@
 }
 
 .navbarInner {
-	margin:0 auto;
-	width: 960px;
-	float: right;
+	width: 600px;
+	margin: 0 auto;
+	float: center;
 }
 
 a:hover, a:visited, a:link, a:active
